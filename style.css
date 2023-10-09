@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.lo {
+  padding-bottom: 20px;
+}
+
+.hi {
+  font-size: 90px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  background-color: #000;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: #708090;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #c0c0c0;
+}
+
+button[data-value="+"]:hover {
+  background-color: #f0c993;
+}
+
+button[data-value="-"]:hover {
+  background-color: #f0c993;
+}
+
+button[data-value="*"]:hover {
+  background-color: #f0c993;
+}
+
+button[data-value="/"]:hover {
+  background-color: #f0c993;
+}
+
+button[data-value="="]:hover {
+  background-color: #f0c993;
+}
+
+button[data-value="AC"]:hover {
+  background-color: #d4d4d4;
+}
+
+button[data-value="DEL"]:hover {
+  background-color: #d4d4d4;
+}
+
+button[data-value="%"]:hover {
+  background-color: #d4d4d4;
+}
+
+button[data-value="="] {
+  background-color: #ffa500;
+}
+
+button[data-value="/"] {
+  background-color: #ffa500;
+}
+
+button[data-value="*"] {
+  background-color: #ffa500;
+}
+
+button[data-value="-"] {
+  background-color: #ffa500;
+}
+
+button[data-value="+"] {
+  background-color: #ffa500;
+}
+
+button[data-value="AC"] {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+button[data-value="DEL"] {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+button[data-value="%"] {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
